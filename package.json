@@ -2,7 +2,7 @@
   "name": "timezone-cast",
   "version": "1.0.0",
   "description": "Change TZ windows to TZ Unix",
-  "main": "index.js",
+  "main": "./lib/main.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",

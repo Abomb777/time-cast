@@ -1805,12 +1805,12 @@ const unixTZArray=[
 export function toUnix(code: string){
     if(unixTZArray.indexOf(code) > -1) return code;
 
-    var inWinIso = windowsTZArray.indexOf(code);
+    const inWinIso = windowsTZArray.indexOf(code);
     if(inWinIso > -1) {
         return unixTZArray[inWinIso];
     }
 
-    var inIso = isoArray.indexOf(code);
+    const inIso = isoArray.indexOf(code);
     if(inIso > -1) {
         return unixTZArray[inIso];
     }
@@ -1819,12 +1819,12 @@ export function toUnix(code: string){
 export function toWindows(code: string){
     if(windowsTZArray.indexOf(code) > -1) return code;
 
-    var inWinIso = unixTZArray.indexOf(code);
+    const inWinIso = unixTZArray.indexOf(code);
     if(inWinIso > -1) {
         return windowsTZArray[inWinIso];
     }
 
-    var inIso = isoArray.indexOf(code);
+    const inIso = isoArray.indexOf(code);
     if(inIso > -1) {
         return windowsTZArray[inIso];
     }
